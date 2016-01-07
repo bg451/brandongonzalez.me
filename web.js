@@ -11,7 +11,9 @@ app.set('view cache', true);
 app.use(compress());
 app.set('views', './views');
 app.set('view engine', 'jade');
-app.use(express.static('public'));
+
+app.use(express.static('public', {maxAge: "365 days"}));
+
 app.get('/', function(req, res) {
   res.render('index');
 });
