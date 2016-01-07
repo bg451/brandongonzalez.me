@@ -1,12 +1,14 @@
 var express = require('express');
 var jade = require('jade');
 var http = require('http');
+var compress = require('compression');
 var app = express();
 
 var options = {cache: true};
 jade.compileFile('./views/index.jade', options);
 
 app.set('view cache', true);
+app.use(compress());
 app.set('views', './views');
 app.set('view engine', 'jade');
 app.use(express.static('public'));
