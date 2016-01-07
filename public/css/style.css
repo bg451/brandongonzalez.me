@@ -1,0 +1,40 @@
+body {
+  color: #3F51B5;
+}
+
+.container {
+  padding-top: 10px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+div.links {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+div.links a {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  text-decoration:none;
+}
+
+hr {
+  border-color: #C5CAE9;
+}
+
+h5 {
+  margin-bottom: 0rem;
+}
+
+a:hover {
+  color: #F44336;
+}
+
+.headlink {
+  color: #3F51B5;
+  text-decoration:none;
+}
