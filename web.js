@@ -18,8 +18,12 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
+app.get('/ping', function(req, res) {
+  res.send('ok');
+});
+
 setInterval(function() {
-  http.get("http://www.brandongonzalez.me");
+  http.get("http://www.brandongonzalez.me/ping");
 }, 300000); // every 5 minutes (300000)
 
 app.listen(process.env.PORT || 3000)
